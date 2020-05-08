@@ -1,0 +1,49 @@
+{
+  "name": "hello-world",
+  "label": "Hello World: my first gear by Yichao Deng",
+  "description": "My very first gear",
+  "version": "0.1.0",
+  "author": "Yichao Deng",
+  "maintainer": "Yichao Deng",
+  "cite": "",
+  "license": "Apache-2.0",
+  "url": "",
+  "source": "",
+  "environment": {
+    "FLYWHEEL": "/flywheel/v0"
+  },
+  "custom": {
+    "gear-builder": {
+      "category": "analysis",
+      "image": "veckiina/alpine-python:0.1.0"
+    },
+    "flywheel": {
+      "suite": "Flywheel Training Gears"
+    }
+  },
+  "inputs": {
+    "message_file": {
+      "description": "custom message after hello.",
+      "base": "file",
+      "type": {
+        "enum": [
+          "text"
+        ]
+      }
+    }
+  },
+  "config": {
+    "my_name": {
+      "description": "Please enter your name.",
+      "type": "string"
+    },
+    "num_rep": {
+      "description": "Repeat times.",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1000,
+      "type": "integer"
+    }
+  },
+  "command": "python run.py"
+}
