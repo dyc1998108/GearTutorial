@@ -14,7 +14,7 @@ while (num_rep > 0):                   # While the num_rep variable is greater t
    print("Hello, {}!".format(my_name)) # Print "Hello Name!" every loop
    num_rep -= 1                       # Decrease the num_rep variable by one
 
-message_file = open(custom_message,'r')   # Open the file with the intent to read
+message_file = open(message_file,'r')   # Open the file with the intent to read
 print('\n')                               # Print a blank line to separate the message from the "hello's"
 #print('Custom Message:')
 #print('\n')
